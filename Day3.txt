@@ -1,0 +1,15 @@
+ day 3
+Q.NWhat is conditional rendering in React JS?   How to implement? 
+ 
+ React allows us to conditionally render components which means that the developer can decide which component to 
+render on the screen on on the basis of some predefined conditions. This is known as conditional rendering.
+
+ Here's how you can implement conditional rendering in React:
+1.	Using if-else statements: You can use regular JavaScript if-else statements within your component's render method to conditionally render components or elements.
+import React from 'react'; const MyComponent = ({ condition }) => { if (condition) {return <ComponentA />; } else { return <ComponentB />; } }; export default MyComponent;
+2.	Using the ternary operator: The ternary operator is a concise way to write conditional expressions in JavaScript.
+import React from 'react'; const MyComponent = ({ condition }) => { return condition ? <ComponentA /> : <ComponentB />; }; export default MyComponent;
+3.	Using logical && operator: You can use the logical && operator to conditionally render a component or element based on a condition. This approach is useful for simple rendering conditions.
+javascriptCopy code
+import React from 'react'; const MyComponent = ({ condition }) => { return condition && <ComponentA />; }; export default MyComponent;
+4.	Using conditional rendering within JSX: You can also use conditional rendering directly within JSX using curly braces {}
